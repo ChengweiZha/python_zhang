@@ -67,7 +67,7 @@ svm = cv2.SVM()
 
 svm.load('svm_cat_data.dat')
 
-img = cv2.imread('/home/shiyanlou/predict/01.jpg',0)
+img = cv2.imread('/01.jpg',0)
 #print img.shapes,' img_test0'
 hogdata = hog(img)
 testData = np.float32(hogdata).reshape(-1,bin_n*4)
